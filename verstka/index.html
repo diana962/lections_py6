@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href = "./css/style.css"> 
+    <!-- href = "./css/style.css"> ссылка на css->style.css -->
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Moon</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Codify</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="./media/stars.png" id="stars">
+        <img src="./media/moon.png" id="moon">
+        <img src="./media/mountains_behind.png" id="behind">
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="./media/mountains_front.png" id="front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Scrolling Effects</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint molestiae possimus voluptatem debitis inventore velit porro autem harum, nobis dolores molestias consequatur minus quis qui deleniti, aut nesciunt iusto? <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusantium repellat consequuntur, quam tenetur hic autem, et nihil voluptates asperiores quos libero excepturi, nulla deserunt at explicabo! Autem, laudantium placeat? <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, hic? Amet ullam adipisci dolores iusto voluptates fuga est sunt quos delectus sit quas libero repudiandae cum repellat, aut quo qui. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, hic? Amet ullam adipisci dolores iusto voluptates fuga est sunt quos delectus sit quas libero repudiandae cum repellat, aut quo qui.
+        </p>
+
+    </div>
+    <script>
+        let stars = document.getElementById('stars')
+        let moon = document.getElementById('moon')
+        let behind = document.getElementById('behind')
+        let front = document.getElementById('front')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px'
+            moon.style.top = value * 1.05 + 'px'
+            behind.style.top = value * 0.3 + 'px'
+            front.style.top = value * 0.5 + 'px'
+            text.style.marginRight = value * 3 + 'px'
+            text.style.marginTop = value * 1.5 + 'px'
+            btn.style.marginTop = value * 1.5 + 'px'
+            header.style.top = value * 1 + 'px'
+        })
+    </script>
+
+    
+</body>
+</html>

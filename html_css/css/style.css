@@ -1,0 +1,60 @@
+#unique {
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 25, 206);
+}
+
+#color {
+    color: white;
+    background-color: blueviolet;
+}
+
+/* Если обращаться к классу, то ставить .
+Если обращаться к индексу/id, то ставить # */
+
+
+#id12 {
+    background-color: rgb(203, 23, 23);
+}
+
+.title-h4 {
+    border: 2px solid black; /* Толщина, стиль и цвет границы */
+    border-radius: 10px; /* Радиус скругления углов */
+    padding: 10px; /* Добавить отступ внутрь, чтобы контент не касался границы */
+    background-color: rgb(92, 228, 228);
+}
+
+button {
+    background-color: aquamarine;
+}
+
+
+button:hover {
+    background-color: violet;
+    color: black;
+    transition: 0.5s;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+    height: 100vh; /* Сделаем контейнер высотой равной высоте видимой области страницы */
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 10px;
+}
